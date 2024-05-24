@@ -19,10 +19,9 @@
     "concurrently": "8.2.2"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"vite\" \"node server.js\"",
     "build": "vite build",
-    "preview": "vite preview",
-    "start": "concurrently \"vite\" \"node server.js\""
+    "preview": "vite preview"
   },
   "eslintConfig": {
     "extends": "react-app"

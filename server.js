@@ -31,9 +31,6 @@ router.post("/create-checkout-session", async (req, res) => {
   res.redirect(303, session.url);
 });
 
-
-
-
 // Create a billing portal session
 router.post("/create-portal-session", async (req, res) => {
   // Get the Stripe customer we previously created
@@ -125,9 +122,8 @@ app.use("/api", router);
 
 // Run the server when developing locally
 // In production we use functions/api.js to run the server on Netlify hosting
-if (process.env.NODE_ENV !== 'production') {
-  app.listen(4242, () => console.log("Running on port 4242"));
+if (process.env.NODE_ENV !== "production") {
+  app.listen(4242, () => console.log("Server running on port 4242"));
 }
 
 module.exports = app;
-
