@@ -7,7 +7,7 @@ const products = [
     priceId: "price_1PK1022eZvKYlo2CDBAu9AFp",
     price: "10",
     period: "month",
-    image:  "https://i.imgur.com/EHyR2nP.png",
+    image: "https://i.imgur.com/EHyR2nP.png",
   },
 ];
 
@@ -45,4 +45,3 @@ export default function Page() {
     </div>
   );
 }
-
