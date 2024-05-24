@@ -11,22 +11,18 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
-    "react-scripts": "^5.0.1",
+    "vite": "^5.2.11",
     "serverless-http": "^3.2.0",
     "stripe": "^15.8.0"
   },
   "devDependencies": {
     "concurrently": "8.2.2"
   },
-  "homepage": "http://localhost:3001",
-  "proxy": "http://localhost:4242",
   "scripts": {
-    "start-client": "PORT=3001 react-scripts start",
-    "start-server": "node server.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "start": "concurrently \"npm run start-client\" \"npm run start-server\""
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "concurrently \"vite\" \"node server.js\""
   },
   "eslintConfig": {
     "extends": "react-app"
